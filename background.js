@@ -53,7 +53,7 @@ async function message(tab, message) {
 chrome.action.onClicked.addListener(async (tab) => {
     let savedUrl = await getSavedURL();
     console.log(savedUrl);
-    
+
     const [{ result: urlInput }] = await executeScript(tab.id, [savedUrl], (savedUrl) => {
         console.log(savedUrl);
         return window.prompt('Origin site with SPID:', savedUrl);
