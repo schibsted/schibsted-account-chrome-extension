@@ -36,7 +36,7 @@ const getSavedURL = () => {
 };
 
 async function isMacintosh() {
-    return navigator.platform.indexOf('Mac') > -1;
+    return navigator.userAgent.includes('Macintosh');
 }
 
 async function message(tab, message) {
@@ -53,7 +53,7 @@ async function message(tab, message) {
 chrome.action.onClicked.addListener(async (tab) => {
     let savedUrl = await getSavedURL();
     console.log(savedUrl);
-
+    
     const [{ result: urlInput }] = await executeScript(tab.id, [savedUrl], (savedUrl) => {
         console.log(savedUrl);
         return window.prompt('Origin site with SPID:', savedUrl);
