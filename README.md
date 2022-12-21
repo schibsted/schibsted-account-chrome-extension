@@ -53,7 +53,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 
 <!-- Prerequisites -->
 
-### :bangbang: Download repository
+### :package: Download repository
 
 Download the respoitory, using `git clone` or as a zipped folder (remember to unzip in that case).
 
@@ -91,6 +91,14 @@ Mac Shortcut: `⌘+U`
 </a>
 
 Contributions are always welcome!
+
+### :spiral_notepad: Issues
+
+Feel free to create an issue using the Github Issues feature. They will be looked at as soon as we got time to do so.
+
+### :bangbang: Vulnerabilities
+
+Security is essential, and if you find any vulnerabilities in this project, we would love for you to report them. [You can read more about it here.](https://github.com/schibsted/schibsted-account-chrome-extension/blob/main/SECURITY.md)
 
 ## :handshake: Contact
 
