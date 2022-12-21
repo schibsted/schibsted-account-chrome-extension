@@ -56,7 +56,7 @@ chrome.action.onClicked.addListener(async (tab) => {
 
     const [{ result: urlInput }] = await executeScript(tab.id, [savedUrl], (savedUrl) => {
         console.log(savedUrl);
-        return window.prompt('Origin site with SPID:', savedUrl);
+        return window.prompt('Origin site with Schibsted Account cookie:', savedUrl);
     });
 
     if (!urlInput) {
@@ -123,9 +123,12 @@ chrome.action.onClicked.addListener(async (tab) => {
     complete = false;
     attempts = 0;
 
-    let spidObject = JSON.parse(session);
-    if ('value' in spidObject && 'error' in spidObject.value) {
-        await message(tab, 'Failed: SPID not retrived\nAre you logged inn at origin?');
+    let cookieObject = JSON.parse(session);
+    if ('value' in cookieObject && 'error' in cookieObject.value) {
+        await message(
+            tab,
+            'Failed: Schibsted Account cookie not retrived\nAre you logged inn at origin?'
+        );
         return;
     }
 
@@ -161,7 +164,7 @@ chrome.action.onClicked.addListener(async (tab) => {
     await chrome.scripting.executeScript({
         target: { tabId: tab.id },
         func: () => {
-            alert('Success: SPID copied');
+            alert('Success: Schibsted Account cookie copied');
             window.location.reload();
         },
     });

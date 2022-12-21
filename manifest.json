@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "SPID Login",
-    "description": "Let's you transfer the SPID cookie to your local projects with ease!",
+    "name": "Schibsted Account Login",
+    "description": "Let's you transfer the Schibsted Account cookie to your local projects with ease!",
     "version": "1.0.0",
     "icons": {
         "16": "images/icon-16.png",
