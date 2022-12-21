@@ -42,6 +42,8 @@ Maybe you can mention me or this repo in the acknowledgements too
     <a href="https://github.com/schibsted/schibsted-account-chrome-extension/issues/">Report Bug</a>
   <span> · </span>
     <a href="https://github.com/schibsted/schibsted-account-chrome-extension/issues/">Request Feature</a>
+  <span> · </span>
+    <a href="https://github.com/schibsted/schibsted-account-chrome-extension/security/advisories/new">Report Vulnerability</a>
   </h4>
 </div>
 
