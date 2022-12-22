@@ -36,7 +36,7 @@ const getSavedURL = () => {
 };
 
 async function isMacintosh() {
-    return navigator.platform.indexOf('Mac') > -1;
+    return navigator.userAgent.includes('Macintosh');
 }
 
 async function message(tab, message) {
