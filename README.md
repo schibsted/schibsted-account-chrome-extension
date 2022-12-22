@@ -66,6 +66,7 @@ Download the respoitory, using `git clone` or as a zipped folder (remember to un
 Install it using these simple steps:
 
 -   Go to the [Chrome Extensions Page](chrome://extensions/)
+-   Toggle developer mode (top right corner)
 -   Click "Load unpacked"
 -   Select the repository copy you downloaded
 -   You are done!
